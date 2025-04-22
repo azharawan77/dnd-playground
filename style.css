@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  width: 200px;
+  background: #f4f4f4;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+.sidebar .element {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #ddd;
+  cursor: grab;
+}
+.playground {
+  flex: 1;
+  position: relative;
+  background: #fff;
+  border: 2px dashed #aaa;
+  overflow: hidden;
+}
+.properties {
+  width: 250px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-left: 1px solid #ccc;
+}
+.draggable {
+  position: absolute;
+  border: 1px solid #333;
+  padding: 5px;
+  background: #fefefe;
+  cursor: move;
+}
+label {
+  display: block;
+  margin-top: 10px;
+}
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+}
+/* .draggable {
+  border: none !important;
+  outline: none !important;
+  background: transparent;
+} */
